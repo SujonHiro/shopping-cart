@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { TbShoppingBag } from "react-icons/tb";
 import { IoClose } from "react-icons/io5";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const cart = useSelector((state) => state.cart);
+
   return (
     <>
       <header className="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm">
@@ -18,7 +21,7 @@ const Navbar = () => {
               href="/"
               aria-label="Brand"
             >
-              Brand
+              ShoppingCart
             </a>
             <div className="md:hidden">
               <button
@@ -69,6 +72,13 @@ const Navbar = () => {
               >
                 Cart
                 <TbShoppingBag size={20} className="border-sky-500" />
+                {cart.length > 0 ? (
+                  <div className=" bg-rose-600 w-5 h-5 rounded-full -ml-3 -mt-3">
+                    <span className="flex justify-center text-white">
+                      {cart.length}
+                    </span>
+                  </div>
+                ) : null}
               </Link>
 
               <a
