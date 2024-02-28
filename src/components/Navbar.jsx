@@ -61,19 +61,19 @@ const Navbar = () => {
           >
             <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
               <Link
-                className="font-medium  hover:text-blue-600 md:py-6 "
+                className="font-medium  hover:text-green-600 md:py-6 "
                 to={"/"}
               >
                 Home
               </Link>
               <Link
-                className="flex items-center gap-1 font-medium  hover:text-blue-600 md:py-6 "
+                className="flex items-center gap-1 font-medium  hover:text-green-600 md:py-6 "
                 to={"/cart"}
               >
                 Cart
-                <TbShoppingBag size={20} className="border-sky-500" />
+                <TbShoppingBag size={20} className="border-green-500" />
                 {cart.length > 0 ? (
-                  <div className=" bg-rose-600 w-5 h-5 rounded-full -ml-3 -mt-3">
+                  <div className=" bg-green-600 w-5 h-5 rounded-full -ml-3 -mt-3">
                     <span className="flex justify-center text-white">
                       {cart.length}
                     </span>
@@ -82,7 +82,7 @@ const Navbar = () => {
               </Link>
 
               <a
-                className="flex items-center gap-x-2 font-medium  hover:text-blue-600 md:border-s md:border-gray-300 md:my-6 md:ps-6 "
+                className="flex items-center gap-x-2 font-medium  hover:text-green-600 md:border-s md:border-gray-300 md:my-6 md:ps-6 "
                 href="#"
               >
                 <svg
@@ -109,13 +109,13 @@ const Navbar = () => {
             {open ? (
               <div className="md:hidden ml-5 flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
                 <Link
-                  className="font-medium  hover:text-blue-600 md:py-6 "
+                  className="font-medium  hover:text-green-600 md:py-6 "
                   to={"/"}
                 >
                   Home
                 </Link>
                 <Link
-                  className="flex items-center gap-1 font-medium  hover:text-blue-600 md:py-6 "
+                  className="flex items-center gap-1 font-medium  hover:text-green-600 md:py-6 "
                   to={"/cart"}
                 >
                   Cart
@@ -123,7 +123,7 @@ const Navbar = () => {
                 </Link>
 
                 <a
-                  className="flex items-center gap-x-2 font-medium  hover:text-blue-600 md:border-s md:border-gray-300 md:my-6 md:ps-6 "
+                  className="flex items-center gap-x-2 font-medium  hover:text-green-600 md:border-s md:border-gray-300 md:my-6 md:ps-6 "
                   href="#"
                 >
                   <svg

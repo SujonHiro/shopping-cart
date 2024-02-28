@@ -9,7 +9,7 @@ const CartTile = ({ cartItem }) => {
   };
   return (
     <>
-      <div className="flex p-4 items-center justify-between bg-red-400 mt-2 mb-2 rounded-xl">
+      <div className="flex p-4 items-center justify-between bg-white shadow-lg border mt-2 mb-2 rounded-xl">
         <div className="flex items-center p-3">
           <img
             src={cartItem.image}
@@ -17,10 +17,10 @@ const CartTile = ({ cartItem }) => {
             className="h-20 rounded-lg"
           />
           <div className="ml-4">
-          <h4 className="text-white text text-sm md:font-bold md:text-wrap">
+          <h4 className="text-dark text text-sm md:font-bold md:text-wrap">
             {cartItem.title}
           </h4>
-          <p className="text-white text text-xl font-bold">
+          <p className="text-dark text text-xl font-bold">
             {"$" + cartItem.price}
           </p>
           </div>
@@ -29,7 +29,7 @@ const CartTile = ({ cartItem }) => {
         <div className="">
           <button
             onClick={handleRemoveFromCart}
-            className=" bg-red-700 text-white border-2 rounded-lg font-bold px-4 py-2 hover:opacity-[.85]"
+            className=" bg-green-700 text-white border-2 rounded-lg font-bold px-4 py-2 hover:opacity-[.85]"
           >
             Remove From Cart
           </button>

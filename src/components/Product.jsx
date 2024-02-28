@@ -35,7 +35,7 @@ const Product = ({ product }) => {
                 ? handleRemoveFromCart
                 : handleAddToCart
             }
-            className=" bg-red-700 text-white border-2 rounded-lg font-bold px-4 py-2 hover:opacity-[.85]"
+            className=" bg-green-700 text-white border-2 rounded-lg font-bold px-4 py-2 hover:opacity-[.85]"
           >
             {cart.some((item) => item.id === product.id)
               ? "Remove From Cart"

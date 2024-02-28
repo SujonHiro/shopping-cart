@@ -19,7 +19,7 @@ const Cart = () => {
               <CartTile key={cartItem.id} cartItem={cartItem} />
             ))}
           </div>
-          <div className=" bg-slate-100 flex flex-col justify-center w-60 h-60 p-3 fixed bottom-20 right-10 space-y-5 mt-3">
+          <div className=" bg-slate-100 rounded flex flex-col justify-center w-60 h-60 p-3  bottom-20 right-10 space-y-5 mt-2">
             <h1 className="">Your Cart Summary</h1>
             <p>
               <span className="text-xl">Total Item</span>
@@ -38,7 +38,7 @@ const Cart = () => {
           </h1>
 
           <Link to="/">
-            <button className="bg-red-700 text-white border-2 rounded-lg font-bold px-4 py-2 hover:opacity-[.85]">
+            <button className="bg-green-700 text-white border-2 rounded-lg font-bold px-4 py-2 hover:opacity-[.85]">
               Shop Now
             </button>
           </Link>
